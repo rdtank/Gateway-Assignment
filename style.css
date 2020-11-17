@@ -95,9 +95,18 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 30%;
-    margin: 0px 25px;
-    padding: 30px 15px;
+    margin-left: 1.2em;
+    padding: 3em 1.9em;
     text-align: center;
+}
+
+.service-head {
+    text-align: center;
+    font-size: 44px;
+    color: #263246;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 0px;
 }
 
 .service:hover {
@@ -107,7 +116,7 @@ body {
 .row1 {
     display: flex;
     flex-flow: row nowrap;
-    margin: 0px 100px;
+    margin: 0px 11%;
 }
 
 #service-icon {
@@ -127,49 +136,74 @@ body {
 }
 
 .title {
-    font-size: 22px;
+    font-size: 1.2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .client-txt {
-    margin: 20px 0px;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
+    color: #263246;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 50px 0px 25px 0px;
 }
 
 .client-logo {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-gap: 20px;
+    background-color: white;
 }
 
-.client-logo div {
-    position: relative;
-    box-shadow: 3px 5px 8px gray;
+.column {
+    float: left;
+    width: 14%;
+    margin: 10px 0px;
+    padding: 10px 16px;
 }
 
-footer {
+.column img {
+    width: 100%;
+}
+
+.client-logo::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.main-footer {
+    padding: 1rem;
+    background: #263246;
     display: flex;
-    background-color: #8a8a8a;
-    margin-top: 15px;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .address {
+    color: white;
     font-size: 18px;
     font-weight: bold;
     margin: 5px;
     padding: 20px 0px 20px 20px;
 }
 
+.social-footer-right li:last-of-type {
+    margin-right: 0px;
+}
+
 .social-footer-icons .fa {
-    font-size: 20px;
+    font-size: 1.3rem;
     color: #fefefe;
 }
 
 .social-footer-icons .fa:hover {
     color: #4a4a4a;
     transition: color 0.3s ease-in;
+}
+
+.footer-end{
+    background: #1d2738;
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
 }
