@@ -4,6 +4,7 @@ body {
     padding: 0;
 }
 
+/* Navigation Bar */
 .navigation-bar {
     background-color: #3A4557;
     overflow: hidden;
@@ -44,6 +45,7 @@ body {
     padding-left: 20px;
 }
 
+/* Banner */
 .bg {
     background-image: url("https://cdn.pixabay.com/photo/2015/12/08/00/26/desk-1081708__340.jpg");
     display: block;
@@ -80,6 +82,8 @@ body {
     border: solid 1px black;
 }
 
+
+/* Paragraph */
 .main-pg {
     color: #868990;
     letter-spacing: 1px;
@@ -90,6 +94,7 @@ body {
     font-weight: 600;
 }
 
+/* Services */
 .service {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -131,15 +136,17 @@ body {
     padding: 2px 16px;
 }
 
-.service-para {
-    color: #868990;
-}
-
 .title {
     font-size: 1.2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.service-para {
+    color: #868990;
+}
+
+
+/* Client Logo */
 .client-txt {
     text-align: center;
     font-size: 35px;
@@ -172,6 +179,7 @@ body {
 
 .main-footer {
     padding: 1rem;
+    color: white;
     background: #263246;
     display: flex;
     align-items: center;
@@ -179,31 +187,65 @@ body {
 }
 
 .address {
-    color: white;
     font-size: 18px;
     font-weight: bold;
     margin: 5px;
     padding: 20px 0px 20px 20px;
 }
 
+.social-footer-right li{
+    list-style-type: none;
+}
+.social-footer-right ul{
+    padding-right: 105px;
+    padding-top: 10px;
+}
+.social-footer-right li a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
 .social-footer-right li:last-of-type {
     margin-right: 0px;
 }
 
-.social-footer-icons .fa {
+.menu-icon{
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 25px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.social-footer-icons .fa{
     font-size: 1.3rem;
     color: #fefefe;
 }
 
+.menu-icon li a{
+    margin-right: 30px;
+}
+
 .social-footer-icons .fa:hover {
-    color: #4a4a4a;
+    color:  #D83A3A;
     transition: color 0.3s ease-in;
 }
 
-.footer-end{
+.footer-end {
     background: #1d2738;
     display: flex;
     padding: 15px 20px;
     align-items: center;
     justify-content: space-between;
+}
+
+.copyright-txt {
+    font-size: 18px;
+    color: white;
+}
+
+.footer-privacy a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding-right: 75px;
 }
