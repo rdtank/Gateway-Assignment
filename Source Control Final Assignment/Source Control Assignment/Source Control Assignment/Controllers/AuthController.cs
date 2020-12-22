@@ -26,7 +26,7 @@ namespace Source_Control_Assignment.Controllers
                 if (isvalid)
                 {
                     FormsAuthentication.SetAuthCookie(model.Username, false);
-                    Session["userId"] = model.Id.ToString();
+                    Session["userId"] = context.User.Where(x => x.Username == model.Username).FirstOrDefault().Id;
                     return RedirectToAction("Index", "Home");
                 }
                 ModelState.AddModelError("", "Invalid Username and Passsword");
@@ -106,6 +106,12 @@ namespace Source_Control_Assignment.Controllers
                 path = "-1";
             }
             return path;
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login");
         }
     }
 }

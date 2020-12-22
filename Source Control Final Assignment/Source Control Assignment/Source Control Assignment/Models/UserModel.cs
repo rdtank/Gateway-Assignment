@@ -22,6 +22,7 @@ namespace Source_Control_Assignment.Models
         public string Mail { get; set; }
         
         [Required(ErrorMessage = "Password is required")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
         
         [RegularExpression(@"[0-9]{10}", ErrorMessage = "Enter Valid Number")]

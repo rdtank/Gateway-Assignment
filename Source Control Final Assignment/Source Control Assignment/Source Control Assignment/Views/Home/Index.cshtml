@@ -2,12 +2,14 @@
 
 @{
     ViewBag.Title = "Index";
+    var path = Model.Image;
+    var temp = path.TrimStart('~');
 }
 
-<h2>Index</h2>
+<br />
+<h2>Hello - @User.Identity.Name !</h2>
 
 <div>
-    <h4>UserModel</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -35,14 +37,6 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Password)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Password)
-        </dd>
-
-        <dt>
             @Html.DisplayNameFor(model => model.Phone)
         </dt>
 
@@ -63,7 +57,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Image)
+            <img src="@temp" alt="User Image" />
         </dd>
 
     </dl>
