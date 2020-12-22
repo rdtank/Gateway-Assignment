@@ -74,3 +74,5 @@ G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Source Control Final Assignment\Sourc
 G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Source Control Final Assignment\Source Control Assignment\Source Control Assignment\obj\Debug\Source Control Assignment.csproj.CopyComplete
 G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Source Control Final Assignment\Source Control Assignment\Source Control Assignment\obj\Debug\Source Control Assignment.dll
 G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Source Control Final Assignment\Source Control Assignment\Source Control Assignment\obj\Debug\Source Control Assignment.pdb
+G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Source Control Final Assignment\Source Control Assignment\Source Control Assignment\bin\log4net.dll
+G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Source Control Final Assignment\Source Control Assignment\Source Control Assignment\bin\log4net.xml

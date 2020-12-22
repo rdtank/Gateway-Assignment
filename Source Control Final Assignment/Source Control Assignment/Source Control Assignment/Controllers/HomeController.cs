@@ -4,15 +4,20 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Source_Control_Assignment.Models;
+using log4net;
 
 namespace Source_Control_Assignment.Controllers
 {
     [Authorize]
     public class HomeController : Controller
     {
+        public static log4net.ILog Log { get; set; }
+
+        ILog log = log4net.LogManager.GetLogger(typeof(HomeController));
         // GET: Home
         public ActionResult Index()
         {
+            log.Debug("User Dashboard");
             string id = Session["userId"].ToString();
             var model = UserDetails(int.Parse(id));
             return View(model);
@@ -20,6 +25,7 @@ namespace Source_Control_Assignment.Controllers
 
         public UserModel UserDetails(int id)
         {
+            log.Debug("Get Userdata from Database");
             using (var context = new UserDBEntities())
             {
                 var result = context.User
