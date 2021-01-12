@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title </title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container">
+            @Html.ActionLink("Home", "Index", "Product", new { area = "" }, new { @class = "navbar-brand" })
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupport">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item">@Html.ActionLink("Product List", "Product_List", new { controller = "Product" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Add Product", "Add_Product", new { controller = "Product" }, new { @class = "nav-link" })</li>
+                    @*<li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-link" })</li>*@
+                </ul>
+                <div class="nav navbar-nav my-2 my-lg-0">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="nav-item">@Html.ActionLink("Logout", "Logout", new { controller = "Home" }, new { @class = "nav-link" })</div>
+                    }
+                    else
+                    {
+                        <div class="nav-item">@Html.ActionLink("Register", "SignUp", new { controller = "Home" }, new { @class = "nav-link" })</div>
+                        <div class="nav-item">@Html.ActionLink("Login", "Login", new { controller = "Home" }, new { @class = "nav-link" })</div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; Rahul Tank Product Management Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

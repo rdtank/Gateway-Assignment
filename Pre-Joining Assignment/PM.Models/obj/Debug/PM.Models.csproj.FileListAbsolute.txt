@@ -1,0 +1,6 @@
+G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Pre-Joining Assignment\PM.Models\bin\Debug\PM.Models.dll
+G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Pre-Joining Assignment\PM.Models\bin\Debug\PM.Models.pdb
+G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Pre-Joining Assignment\PM.Models\obj\Debug\PM.Models.csproj.CoreCompileInputs.cache
+G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Pre-Joining Assignment\PM.Models\obj\Debug\PM.Models.dll
+G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Pre-Joining Assignment\PM.Models\obj\Debug\PM.Models.pdb
+G:\RDTANK\01GATEWAY ASSIGNMENT\Assignments\Pre-Joining Assignment\PM.Models\obj\Debug\PM.Models.csprojAssemblyReference.cache
