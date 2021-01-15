@@ -1,0 +1,429 @@
+{
+	"info": {
+		"_postman_id": "7696eeb2-96a7-4324-9ede-647ea877f524",
+		"name": "Hotel Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Hotel 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"HotelName\":\"Hotel1\",\r\n\"Address\":\"Address1\",\r\n\"City\":\"City1\",\r\n\"Pincode\":\"111111\",\r\n\"ContactNumber\":1234567890,\r\n\"Contactperson\":\"XYZ\",\r\n\"CreatedBy\":\"Rahul Tank\",\r\n\"Website\":\"Hotel1.com\",\r\n\"Facebook\":\"FBHotel1\",\r\n\"Twitter\":\"THotel1\",\r\n\"IsActive\":\"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Hotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Hotel 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"HotelName\":\"Hotel2\",\r\n\"Address\":\"Address2\",\r\n\"City\":\"City2\",\r\n\"Pincode\":\"222222\",\r\n\"ContactNumber\":9876543210,\r\n\"Contactperson\":\"ABC\",\r\n\"CreatedBy\":\"Rahul Tank\",\r\n\"Website\":\"Hotel2.com\",\r\n\"Facebook\":\"FBHotel2\",\r\n\"Twitter\":\"THotel2\",\r\n\"IsActive\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Hotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Hotel 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"HotelName\":\"Hotel3\",\r\n\"Address\":\"Address3\",\r\n\"City\":\"City3\",\r\n\"Pincode\":\"333333\",\r\n\"ContactNumber\":1472583690,\r\n\"Contactperson\":\"Rahul\",\r\n\"CreatedBy\":\"Rahul Tank\",\r\n\"Website\":\"Hotel3.com\",\r\n\"Facebook\":\"FBHotel3\",\r\n\"Twitter\":\"THotel3\",\r\n\"IsActive\":\"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Hotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Hotel Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"HotelName\":\"Hotel3\",\r\n\"Address\":\"Address3\",\r\n\"City\":\"City3\",\r\n\"Pincode\":\"333333\",\r\n\"ContactNumber\":1472583690,\r\n\"Contactperson\":\"Rahul\",\r\n\"CreatedBy\":\"Rahul Tank\",\r\n\"Website\":\"Hotel3.com\",\r\n\"Facebook\":\"FBHotel3\",\r\n\"Twitter\":\"THotel3\",\r\n\"IsActive\":\"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Hotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Hotel Details By ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"HotelName\":\"Hotel3\",\r\n\"Address\":\"Address3\",\r\n\"City\":\"City3\",\r\n\"Pincode\":\"333333\",\r\n\"ContactNumber\":1472583690,\r\n\"Contactperson\":\"Rahul\",\r\n\"CreatedBy\":\"Rahul Tank\",\r\n\"Website\":\"Hotel3.com\",\r\n\"Facebook\":\"FBHotel3\",\r\n\"Twitter\":\"THotel3\",\r\n\"IsActive\":\"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Hotel/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Hotel",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Hotel",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Hotel_Id\": 3,\r\n    \"HotelName\": \"Hotel3\",\r\n    \"Address\": \"Address3\",\r\n    \"City\": \"City3\",\r\n    \"Pincode\": \"333333\",\r\n    \"ContactNumer\": 96649664986,\r\n    \"ContactPerson\": \"XYZ\",\r\n    \"Website\": \"Hotel3.com\",\r\n    \"Facebook\": \"FBHotel3\",\r\n    \"Twitter\": \"tHotel3\",\r\n    \"IsActive\": \"1\",\r\n    \"CreatedBy\": \"Rahul Tank\",\r\n    \"UpdatedBy\": \"Rahul\",\r\n    \"Books\": [],\r\n    \"Rooms\": []\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Hotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"Room_Id\":1,\r\n     \"Hotel_Id\":3,\r\n     \"RoomName\":\"Single Bad\",\r\n     \"Category\":\"Medium\",\r\n     \"Price\":\"2500\",\r\n     \"IsActive\":\"1\",\r\n     \"CreatedBy\":\"Rahul\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Room",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Room 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"Room_Id\":2,\r\n     \"Hotel_Id\":3,\r\n     \"RoomName\":\"Double Bad\",\r\n     \"Category\":\"Large\",\r\n     \"Price\":\"3500\",\r\n     \"IsActive\":\"1\",\r\n     \"CreatedBy\":\"Rahul\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Room",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Room 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"Room_Id\":1,\r\n     \"Hotel_Id\":5,\r\n     \"RoomName\":\"Double Bad\",\r\n     \"Category\":\"Large\",\r\n     \"Price\":\"3000\",\r\n     \"IsActive\":\"0\",\r\n     \"CreatedBy\":\"XYZ\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Room",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Room Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"Room_Id\":1,\r\n     \"Hotel_Id\":5,\r\n     \"RoomName\":\"Double Bad\",\r\n     \"Category\":\"Large\",\r\n     \"Price\":\"3000\",\r\n     \"IsActive\":\"0\",\r\n     \"CreatedBy\":\"XYZ\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Room",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Room Updated",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Room_Id\": 1,\r\n    \"RoomName\": \"Large Bad\",\r\n    \"Category\": \"Medium\",\r\n    \"Price\": \"2850\",\r\n    \"IsActive\": \"1\",\r\n    \"CreateDate\": \"2021-01-15T13:59:17.373\",\r\n    \"CreatedBy\": \"Rahul\",\r\n    \"UpdateDate\": null,\r\n    \"UpdatedBy\": \"ABC\",\r\n    \"Hotel_Id\": 3,\r\n    \"Books\": [],\r\n    \"Hotel\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Room",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Room Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n     \"Room_Id\": 1, \r\n     \"Hotel_Id\":3,\r\n     \"StatusOfBooking\":\"Close\",\r\n     \"IsActive\":\"1\",\r\n     \"BookingDate\": \"15-01-2020\"\r\n\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Booked Room",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n     \"Room_Id\": 2, \r\n     \"Hotel_Id\": 3,\r\n     \"StatusOfBooking\":\"Close\",\r\n     \"IsActive\":\"1\",\r\n     \"BookingDate\": \"15-01-2020\"\r\n\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Booking/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Booking",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booked Room Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n     \"Room_Id\": 2, \r\n     \"Hotel_Id\": 3,\r\n     \"StatusOfBooking\":\"Close\",\r\n     \"IsActive\":\"1\",\r\n     \"BookingDate\": \"15-01-2020\"\r\n\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65466/api/Booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65466",
+					"path": [
+						"api",
+						"Booking"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
